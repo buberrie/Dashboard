@@ -27,6 +27,14 @@ body {
   color: #fff;
 }
 
+.toggle-btn-div {
+  @apply bg-white
+}
+
+.dark .toggle-btn-div {
+  @apply bg-[#171717]
+}
+
 .navbar {
   @apply bg-bg_white border-b-[1px] border-[#3333334a]
 }
