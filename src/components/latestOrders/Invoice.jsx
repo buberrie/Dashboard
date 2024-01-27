@@ -13,7 +13,7 @@ const Invoice = (props) => {
     <div
       className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50 z-20 modal-overlay"
       onClick={handleOverlayClick}>
-      <div className=" p-8 rounded-md box dark-text w-[70%] max-w-[30rem]">
+      <div className=" p-8 rounded-md box dark-text w-[80%] max-w-[30rem]">
         <div className="flex justify-end">
           <button className="font-bold text-[1rem] border w-8 h-8 rounded-full" onClick={props.onClose}>
             X

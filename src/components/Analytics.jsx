@@ -67,7 +67,7 @@ const Analytics = () => {
             options={options}
             styles={customStyles}
             isSearchable={false}
-            defaultValue={options[1]}
+            defaultValue={options[3]}
           />
         </div>
       </div>

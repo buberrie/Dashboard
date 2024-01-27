@@ -39,7 +39,7 @@ const UserProfileModal = (props) => {
 
   return (
     <div
-      className={`fixed ${props.openModal ? "opacity-100 top-0" : "opacity-0 -top-[30rem] pointer-events-none"} transition-all duration-300 delay-200 xxl:right-[25%] md:right-10 right-4 flex justify-end items-start w-full lg:w-[30rem] md:w-[55%] h-full xxl:h-[40%] md:h-[65%] modal bg-transparent`}
+      className={`fixed ${props.openModal ? "opacity-100 top-0" : "opacity-0 -top-[30rem] pointer-events-none"} transition-all duration-300 xxl:right-[25%] md:right-10 right-4 flex justify-end items-start w-full lg:w-[30rem] md:w-[55%] h-full xxl:h-[40%] md:h-[65%] modal bg-transparent`}
       onMouseLeave={handleCloseModal}
       onClick={handleCloseModal}>
       <nav className="box dark-text flex items-center flex-col relative right-5 md:top-20 top-16 p-6 rounded-lg bg-bg_white w-[20rem] max-w-[80%]">
