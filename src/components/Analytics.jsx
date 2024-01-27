@@ -80,7 +80,7 @@ const Analytics = () => {
             <div className="w-full h-[1.2rem] border-y-[1px] border-[#ccccccd0] border-dashed"></div>
           </div>
         ))}
-        <div className="flex justify-between items-end absolute bottom-[1.15rem] md:left-[6rem] sm:left-[4rem] left-[2.8rem] xxl:w-[90%] xl:w-[89%] w-[90%]">
+        <div className="flex justify-between items-end absolute bottom-[1.15rem] md:left-[6rem] sm:left-[4rem] left-[2.8rem] xxl:w-[90%] xl:w-[89%] w-[87%]">
           {salesMonthTrends.map((month, index) => (
             <div key={index} className="flex-center flex-col">
               <div
