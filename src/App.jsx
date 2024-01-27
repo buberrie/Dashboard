@@ -1,5 +1,3 @@
-import './App.css'
-// import SideBar from '../src/components/sideBar/SideBar'
 import Dashboard from './dashboard/Dashboard';
 
 function App() {
