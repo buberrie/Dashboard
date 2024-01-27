@@ -71,7 +71,7 @@ const Analytics = () => {
           />
         </div>
       </div>
-      <div className="flex flex-col gap-4 mt-5 w-[101%]">
+      <div className="flex flex-col gap-4 mt-5 w-full">
         {salesValueTrends.map((fig, index) => (
           <div key={index} className="flex justify-between items-baseline">
             <span className="md:w-[6.5rem] sm:w-[4rem] w-[3rem] l:text-[0.75rem] md:text-[.68rem] text-[0.6rem]">
