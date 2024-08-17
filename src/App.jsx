@@ -1,8 +1,12 @@
+
+// import SideBar from '../src/components/sideBar/SideBar'
 import Dashboard from './dashboard/Dashboard';
 
 function App() {
   return (
-      <Dashboard/>
+     <body className='w-full'>
+       <Dashboard/>
+     </body>
   );
 }
 

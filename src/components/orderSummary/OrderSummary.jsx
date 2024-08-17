@@ -3,9 +3,9 @@ import NumberAnimate from "./NumberAnimate"
 
 const OrderSummary = () => {
   return (
-    <article className=" flex items-center justify-center flex-wrap gap-4 h-full l:w-[40%] w-full l:mt-0 mt-4 md:px-0 px-2">
+    <article className=" flex items-center justify-center flex-wrap gap-4 h-full l:w-[40%] w-full l:mt-0 mt-4">
         {orderSums.map((item, index) => (
-            <div key={index} className=" box flex justify-between flex-col sm:p-3 px-4 py-3 l:w-[47%] sm:w-[48.5%] w-full l:h-[47%] h-[11rem]">
+            <div key={index} className=" box flex justify-between flex-col sm:p-3 px-4 py-3 l:w-[47%] sm:w-[48.5%] w-full l:h-[47%] h-[13rem]">
                <div className=" w-full flex-between">
                 <img src={item.imgUrl} alt="icon" className="border p-2 rounded-full"/>
                 <img src={item.chartUrl} alt="chart" />

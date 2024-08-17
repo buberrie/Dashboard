@@ -4,6 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --chart-width: calc(100% - 4.2rem);
+  --sibar-width: 5rem;
+}
+
 .max-width {
   @apply max-w-[1440px] mx-auto ;
 }
@@ -24,7 +29,7 @@ body {
 
 .dark body {
   background-color: #26282C;
-  color: #fff;
+  color: #ececec;
 }
 
 .toggle-btn-div {
@@ -32,7 +37,7 @@ body {
 }
 
 .dark .toggle-btn-div {
-  @apply bg-[#202020]
+  @apply bg-[#171717]
 }
 
 .navbar {
@@ -92,7 +97,7 @@ body {
 }
 
 .dark .box {
-  @apply bg-[#252525] text-[#ffffffe0] border-[#ffffff2c] border
+  @apply bg-[#252525] text-[#dedede] border-[#ffffff2c] border
 }
 
 .dark-text {
@@ -109,4 +114,36 @@ body {
 
 .dark .progress-bar {
   @apply bg-[#3d3c3c]
+}
+
+.invoice-action-btn:hover .icon-color {
+  @apply scale-110
+}
+
+.invoice-action-btn:hover small {
+  @apply opacity-100
+}
+
+/* creates a snap effect as you scroll */
+.scroll-snap {
+  scroll-snap-type: inline mandatory;
+  scroll-padding-inline: 1.5rem;
+}
+
+.scroll-snap > * {
+  scroll-snap-align: start;
+}
+
+@media (max-width: 770px) {
+  :root {
+    --sidebar-width: 3rem ;
+  }
+}
+
+@media (max-width: 570px) {
+  :root {
+    --chart-width: calc(100% - 3.2rem);
+
+    --sidebar-width: 2rem ;
+  }
 }

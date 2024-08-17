@@ -11,9 +11,10 @@ const LatestOrders = () => {
   };
 
   return (
-    <section className="box border l:w-[66%] w-[99%] overflow overflow-x-scroll h-fit relative l:mr-5 mr-0 l:px-5 sm:p-5 px-2 py-4">
+    <section className="box l:w-[66%] w-full h-fit relative l:mr-5 mr-0 l:px-5 sm:p-5 px-2 py-4">
       <h2 className="dark-text l:text-lg text-base ml-4">Latest Orders</h2>
-      <table className="mx-2 md:w-full sm:w-[150%] w-[200%] h-[23rem]">
+      <div className="overflow overflow-x-scroll w-full h-full">
+      <table className="mx-2 md:w-full w-[160%] h-[23rem] sm:text-base text-sm">
         <thead>
           <tr>
             <th className="text-start h-[60px] pl-2">Name</th>
@@ -60,6 +61,7 @@ const LatestOrders = () => {
           ))}
         </tbody>
       </table>
+      </div>
     </section>
   );
 };

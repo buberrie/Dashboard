@@ -7,18 +7,18 @@ import TopPlatforms from "../components/TopPlatforms"
 
 const Dashboard = () => {
   return (
-    <main className="flex md:ml-0 sm:ml-[3rem] ml-[2rem]">
+    <main className="flex md:justify-center border justify-between max-width">
         <nav>
             <SideBar/>
         </nav>
-        <section className="w-full">
+        <section style={{width : "calc(100% - var(--sidebar-width))"}}>
             <NavBar/>
-           <div className="max-width  pb-8">
-            <div className="flex l:h-[27rem] h-fit md:p-5 p-2 w-full l:flex-row flex-col">
+           <div className=" pb-8">
+            <div className="flex l:h-[27rem] h-fit sm:p-5 px-2 py-3 w-full l:flex-row flex-col">
               <Analytics/>
               <OrderSummary/>
             </div>
-            <div className="flex h-fit md:px-5 px-4 l:py-0 py-3 w-full l:flex-row flex-col">
+            <div className="relative flex h-fit md:px-5 px-2 l:py-0 py-3 w-full l:flex-row flex-col">
               <LatestOrders/>
               <TopPlatforms/>
             </div>
