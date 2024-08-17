@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --chart-width: calc(100% - 4.2rem);
+  --sibar-width: 5rem;
+}
+
+.max-width {
+  @apply max-w-[1440px] mx-auto ;
+}
+
+.flex-center {
+  @apply flex items-center justify-center
+}
+
+.flex-between {
+  @apply flex items-center justify-between
+}
+
+body {
+  color: #26282C;
+  background-color: #fff;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.dark body {
+  background-color: #26282C;
+  color: #ececec;
+}
+
+.toggle-btn-div {
+  @apply bg-white
+}
+
+.dark .toggle-btn-div {
+  @apply bg-[#171717]
+}
+
+.navbar {
+  @apply bg-bg_white border-b-[1px] border-[#3333334a]
+}
+
+.dark .navbar {
+  @apply bg-[#252525] border-[#ffffff3f]
+}
+
+.sidebar-container {
+  @apply md:bg-transparent bg-bg_white
+}
+
+.dark .sidebar-container {
+  @apply md:bg-transparent bg-[#252525]
+}
+
+.sidebar {
+  @apply bg-transparent md:bg-bg_white
+}
+
+.dark .sidebar {
+  @apply bg-transparent md:bg-[#252525] 
+}
+
+.light {
+  @apply bg-[#f1eeeee6] 
+}
+
+.dark .light {
+  @apply bg-[#484747e6] 
+}
+
+.overflow::-webkit-scrollbar {
+  display: none;
+}
+
+.icon-color {
+  color: #0D062D !important;
+}
+
+.dark .icon-color {
+  color: #ffffffe0 !important; 
+}
+
+.icon-text {
+  @apply text-[#0D062D]
+}
+
+.dark .icon-text {
+  @apply text-[#ffffffe0] 
+}
+
+.box {
+  @apply text-neutral_dark font-semibold shadow-card-100 rounded-xl bg-white
+}
+
+.dark .box {
+  @apply bg-[#252525] text-[#dedede] border-[#ffffff2c] border
+}
+
+.dark-text {
+  @apply text-primary_black 
+}
+
+.dark .dark-text {
+  @apply text-[#fff]
+}
+
+.progress-bar {
+  @apply bg-[#F5F5F5]
+}
+
+.dark .progress-bar {
+  @apply bg-[#3d3c3c]
+}
+
+.invoice-action-btn:hover .icon-color {
+  @apply scale-110
+}
+
+.invoice-action-btn:hover small {
+  @apply opacity-100
+}
+
+@media (max-width: 770px) {
+  :root {
+    --sidebar-width: 3rem ;
+  }
+}
+
+@media (max-width: 570px) {
+  :root {
+    --chart-width: calc(100% - 3.2rem);
+
+    --sidebar-width: 2rem ;
+  }
+}
