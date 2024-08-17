@@ -123,7 +123,7 @@ const Analytics = () => {
           <div
             className="overflow overflow-x-scroll relative md:top-[1.85rem] top-[1.7rem]"
             style={{ width: "var(--chart-width)" }}>
-            <div className=" relative flex justify-between items-end w-fit">
+            <div className="scroll-snap relative flex justify-between items-end w-fit">
               {valuesDetail?.map((info, index) => (
                 // candles
                 <div key={index} className=" flex-center flex-col relative">

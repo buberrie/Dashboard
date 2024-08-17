@@ -124,6 +124,16 @@ body {
   @apply opacity-100
 }
 
+/* creates a snap effect as you scroll */
+.scroll-snap {
+  scroll-snap-type: inline mandatory;
+  scroll-padding-inline: 1.5rem;
+}
+
+.scroll-snap > * {
+  scroll-snap-align: start;
+}
+
 @media (max-width: 770px) {
   :root {
     --sidebar-width: 3rem ;
