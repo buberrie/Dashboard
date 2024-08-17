@@ -54,8 +54,8 @@ const SideBar = () => {
 
   return (
     <div
-      className={`md:w-fit w-full top-0 left-0 md:sticky fixed transition-all duration-300 ${
-        expand ? "md:bg-transparent bg-[#00000081] z-50" : "bg-transparent"
+      className={`md:w-fit w-full top-0 left-0 md:sticky transition-all duration-300 ${
+        expand ? "md:bg-transparent bg-[#00000081] z-50 fixed" : "sticky bg-transparent"
       } h-screen`} onClick={handleClickOutside}>
       <div
        ref={sidebarRef}

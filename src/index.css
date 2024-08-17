@@ -10,7 +10,7 @@
 }
 
 .max-width {
-  @apply max-w-[1440px] mx-auto ;
+  @apply max-w-[1440px] w-full mx-auto ;
 }
 
 .flex-center {
@@ -142,7 +142,7 @@ body {
 
 @media (max-width: 570px) {
   :root {
-    --chart-width: calc(100% - 3.2rem);
+    --chart-width: calc(100% - 2.9rem);
 
     --sidebar-width: 2rem ;
   }

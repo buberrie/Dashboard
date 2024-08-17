@@ -11,10 +11,10 @@ const Dashboard = () => {
         <nav>
             <SideBar/>
         </nav>
-        <section style={{width : "calc(100% - var(--sidebar-width))"}}>
+        <section className="w-full">
             <NavBar/>
            <div className=" pb-8">
-            <div className="flex l:h-[27rem] h-fit sm:p-5 px-2 py-3 w-full l:flex-row flex-col">
+            <div className="flex h-[28rem] sm:p-5 px-2 py-3 w-full l:flex-row flex-col">
               <Analytics/>
               <OrderSummary/>
             </div>

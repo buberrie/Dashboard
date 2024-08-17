@@ -115,11 +115,11 @@ const Analytics = () => {
             <span className="sm:w-[5rem] w-[4rem] sm:text-[0.75rem] text-[0.65rem] relative sm:top-1 top-[0.13rem]">
               {value}
             </span>
-            <div className="w-full h-[1.5rem] border-y-[1px] border-[#ccccccd0] border-dashed"></div>
+            <div className="w-full h-[1.5rem] border-y-[1px] border-[#ccccccd0] border-dashed relative -z-[1]"></div>
           </div>
         ))}
 
-        <main className="absolute w-full h-full flex justify-end items-end">
+        <main className="absolute w-full h-full flex justify-end items-end z-[1]">
           <div
             className="overflow overflow-x-scroll relative md:top-[1.85rem] top-[1.7rem]"
             style={{ width: "var(--chart-width)" }}>
@@ -155,7 +155,7 @@ const Analytics = () => {
                     onMouseLeave={() => setHoveredPrice(highestHeightItem.id)}></div>
 
                   {/* sales date */}
-                  <div className="md:w-[3.85rem] w-[3.5rem] text-center mt-4 md:text-[0.75rem] text-[0.65rem] whitespace-nowrap">
+                  <div className="md:w-[1.85rem] w-[1.5rem] h-[1rem] border text-center mt-4 md:text-[0.75rem] text-[0.65rem] whitespace-wrap">
                     {info.id}
                   </div>
                 </div>
