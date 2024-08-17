@@ -7,7 +7,7 @@ import TopPlatforms from "../components/TopPlatforms"
 
 const Dashboard = () => {
   return (
-    <main className="flex md:justify-center border justify-between max-width">
+    <main className="flex md:justify-center justify-between max-width">
         <nav>
             <SideBar/>
         </nav>
