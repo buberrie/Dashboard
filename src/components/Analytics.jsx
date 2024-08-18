@@ -112,7 +112,7 @@ const Analytics = () => {
         {/* prices range */}
         {values.map((value, index) => (
           <div key={index} className="flex justify-between items-baseline">
-            <span className="sm:w-[5rem] w-[3.4rem] sm:text-[0.75rem] text-[0.65rem] relative sm:top-1 top-[0.13rem]">
+            <span className="sm:w-[5rem] w-[3.45rem] sm:text-[0.75rem] text-[0.65rem] relative sm:top-1 top-[0.2rem]">
               {value}
             </span>
             <div className="w-full h-[1.5rem] border-y-[1px] border-[#ccccccd0] border-dashed"></div>

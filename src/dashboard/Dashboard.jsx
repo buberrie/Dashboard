@@ -11,7 +11,7 @@ const Dashboard = () => {
         <nav>
             <SideBar/>
         </nav>
-        <section className="w-full">
+        <section className="w-full content-container">
             <NavBar/>
            <div className=" pb-8">
             <div className="flex l:h-[28rem] h-fit sm:p-5 px-2 py-3 w-full l:flex-row flex-col">

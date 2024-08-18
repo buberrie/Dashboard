@@ -108,6 +108,15 @@ body {
   @apply text-[#fff]
 }
 
+/* analytic */
+.dashed-border {
+  @apply border-[#545454]
+}
+
+.dark .dashed-border {
+  @apply border-gray-700
+}
+
 .progress-bar {
   @apply bg-[#F5F5F5]
 }
@@ -138,11 +147,15 @@ body {
   :root {
     --sidebar-width: 3rem ;
   }
+
+  .content-container {
+    width: calc(100% - var(--sidebar-width))
+  }
 }
 
 @media (max-width: 570px) {
   :root {
-    --chart-width: calc(100% - 2.9rem);
+    --chart-width: calc(100% - 2.8rem);
 
     --sidebar-width: 2rem ;
   }
