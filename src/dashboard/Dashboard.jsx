@@ -14,7 +14,7 @@ const Dashboard = () => {
         <section className="w-full">
             <NavBar/>
            <div className=" pb-8">
-            <div className="flex h-[28rem] sm:p-5 px-2 py-3 w-full l:flex-row flex-col">
+            <div className="flex l:h-[28rem] h-fit sm:p-5 px-2 py-3 w-full l:flex-row flex-col">
               <Analytics/>
               <OrderSummary/>
             </div>
