@@ -7,8 +7,8 @@ const OrderSummary = () => {
         {orderSums.map((item, index) => (
             <div key={index} className=" box flex justify-between flex-col sm:p-3 px-4 py-3 lg:w-[47%] sm:w-[48.5%] w-full lg:h-[47%] h-[13rem]">
                <div className=" w-full flex-between">
-                <img src={item.imgUrl} alt="icon" className="border p-2 rounded-full w-11"/>
-                <img src={item.chartUrl} alt="chart" className="w-30" />
+                <img src={item.imgUrl} alt="icon" className="border p-2 rounded-full l:w-11 md:w-9 w-11"/>
+                <img src={item.chartUrl} alt="chart" className="l:w-30 md:w-24 w-30" />
                </div>
                <h2 className="w-full  text-[1.125rem]">{item.title}</h2>
                <NumberAnimate number={item.value} symbol={item.Symbol}/>

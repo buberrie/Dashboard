@@ -49,19 +49,11 @@ body {
 }
 
 .sidebar-container {
-  @apply md:bg-transparent bg-bg_white
+  @apply bg-bg_white
 }
 
 .dark .sidebar-container {
-  @apply md:bg-transparent bg-[#252525]
-}
-
-.sidebar {
-  @apply bg-transparent md:bg-bg_white
-}
-
-.dark .sidebar {
-  @apply bg-transparent md:bg-[#252525] 
+  @apply bg-[#252525]
 }
 
 .light {
