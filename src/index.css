@@ -48,12 +48,21 @@ body {
   @apply bg-[#252525] border-[#ffffff3f]
 }
 
+/* sidebar */
 .sidebar-container {
   @apply bg-bg_white
 }
 
 .dark .sidebar-container {
   @apply bg-[#252525]
+}
+
+.border-tab {
+  @apply border-r-[#0D062D]
+}
+
+.dark .border-tab {
+  @apply border-r-[#969696]
 }
 
 .light {
