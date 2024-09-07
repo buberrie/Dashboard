@@ -110,11 +110,11 @@ body {
 
 /* analytic */
 .dashed-border {
-  @apply border-[#545454]
+  @apply border-[#ccccccd0]
 }
 
 .dark .dashed-border {
-  @apply border-gray-700
+  @apply border-[#757575d0]
 }
 
 .progress-bar {
@@ -141,6 +141,25 @@ body {
 
 .scroll-snap > * {
   scroll-snap-align: start;
+}
+
+/* RESPONSIVE DESIGN */
+@media only screen and (min-width: 1300px) and (max-width: 1440px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 1190px) and (max-width: 1300px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1190px) {
+  html {
+    font-size: 11px;
+  }
 }
 
 @media (max-width: 770px) {

@@ -10,7 +10,7 @@
 }
 
 .max-width {
-  @apply max-w-[1440px] mx-auto ;
+  @apply max-w-[1440px] w-full mx-auto ;
 }
 
 .flex-center {
@@ -108,6 +108,15 @@ body {
   @apply text-[#fff]
 }
 
+/* analytic */
+.dashed-border {
+  @apply border-[#ccccccd0]
+}
+
+.dark .dashed-border {
+  @apply border-[#757575d0]
+}
+
 .progress-bar {
   @apply bg-[#F5F5F5]
 }
@@ -134,15 +143,38 @@ body {
   scroll-snap-align: start;
 }
 
+/* RESPONSIVE DESIGN */
+@media only screen and (min-width: 1300px) and (max-width: 1440px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 1190px) and (max-width: 1300px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1190px) {
+  html {
+    font-size: 11px;
+  }
+}
+
 @media (max-width: 770px) {
   :root {
     --sidebar-width: 3rem ;
+  }
+
+  .content-container {
+    width: calc(100% - var(--sidebar-width))
   }
 }
 
 @media (max-width: 570px) {
   :root {
-    --chart-width: calc(100% - 3.2rem);
+    --chart-width: calc(100% - 2.8rem);
 
     --sidebar-width: 2rem ;
   }

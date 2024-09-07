@@ -63,7 +63,7 @@ const SideBar = () => {
           expand ? "md:w-[11rem] w-[9rem]" : "md:w-[5rem] sm:w-[3rem] w-[2rem]"
         } overflow-scroll `}>
         <nav
-          className={`sidebar flex-between flex-col w-full transition-all h-full py-5 z-40`}
+          className={`sidebar flex-between flex-col w-full transition-all h-fit py-5 z-40`}
           onClick={handleClick}>
 
           <div className="w-full md:gap-6 gap-2 flex-center flex-col">

@@ -3,12 +3,12 @@ import NumberAnimate from "./NumberAnimate"
 
 const OrderSummary = () => {
   return (
-    <article className=" flex items-center justify-center flex-wrap gap-4 h-full l:w-[40%] w-full l:mt-0 mt-4">
+    <article className=" flex items-center justify-center flex-wrap gap-4 h-full lg:w-[40%] w-full lg:mt-0 mt-4">
         {orderSums.map((item, index) => (
-            <div key={index} className=" box flex justify-between flex-col sm:p-3 px-4 py-3 l:w-[47%] sm:w-[48.5%] w-full l:h-[47%] h-[13rem]">
+            <div key={index} className=" box flex justify-between flex-col sm:p-3 px-4 py-3 lg:w-[47%] sm:w-[48.5%] w-full lg:h-[47%] h-[13rem]">
                <div className=" w-full flex-between">
-                <img src={item.imgUrl} alt="icon" className="border p-2 rounded-full"/>
-                <img src={item.chartUrl} alt="chart" />
+                <img src={item.imgUrl} alt="icon" className="border p-2 rounded-full w-11"/>
+                <img src={item.chartUrl} alt="chart" className="w-30" />
                </div>
                <h2 className="w-full  text-[1.125rem]">{item.title}</h2>
                <NumberAnimate number={item.value} symbol={item.Symbol}/>

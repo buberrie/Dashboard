@@ -57,11 +57,11 @@ const Analytics = () => {
   }, [dropDownRef]);
 
   return (
-    <section className="box l:w-[65%] w-full h-full relative l:mr-3 mr-0 pt-3 l:pb-0 pb-[3rem] l:px-5 sm:px-3 px-2">
+    <section className="box lg:w-[65%] w-full h-full relative lg:mr-3 mr-0 pt-3 lg:pb-0 pb-[4rem] lg:px-5 px-3">
       <div className="flex-between">
-        <h2 className="dark-text l:text-lg text-base">Sales Trends</h2>
+        <h2 className="dark-text lg:text-lg text-base">Sales Trends</h2>
         <div className="flex-center gap-4">
-          <span className="l:text-[1rem] text-[0.8rem]">Sort by:</span>
+          <span className="lg:text-[1rem] text-[0.8rem]">Sort by:</span>
           <div className=" w-fit relative z-[2]" ref={dropDownRef}>
             <label
               className="border w-fit rounded-[2rem] z-[1] cursor-pointer p-3 flex-between gap-4"
@@ -112,16 +112,16 @@ const Analytics = () => {
         {/* prices range */}
         {values.map((value, index) => (
           <div key={index} className="flex justify-between items-baseline">
-            <span className="sm:w-[5rem] w-[4rem] sm:text-[0.75rem] text-[0.65rem] relative sm:top-1 top-[0.13rem]">
+            <span className="sm:w-[5rem] w-[3.45rem] sm:text-[0.75rem] text-[0.65rem] relative sm:top-1 top-[0.2rem]">
               {value}
             </span>
-            <div className="w-full h-[1.5rem] border-y-[1px] border-[#ccccccd0] border-dashed relative -z-[1]"></div>
+            <div className="w-full h-[1.5rem] border-y-[1px] dashed-border border-dashed"></div>
           </div>
         ))}
 
-        <main className="absolute w-full h-full flex justify-end items-end z-[1]">
+        <main className="absolute w-full h-full flex justify-end items-end">
           <div
-            className="overflow overflow-x-scroll relative md:top-[1.85rem] top-[1.7rem]"
+            className="overflow overflow-x-scroll relative sm:top-[2.9rem] top-[2.9rem]"
             style={{ width: "var(--chart-width)" }}>
             <div className="scroll-snap relative flex justify-between items-end w-fit">
               {valuesDetail?.map((info, index) => (
@@ -134,15 +134,15 @@ const Analytics = () => {
                       opacity: hoveredPrice === info.id ? 1 : 0,
                       transition: "opacity 0.3s ease",
                     }}>
-                    <div className="bg-dark text-white md:px-[0.5rem] px-[0.35rem] md:text-[0.68rem] text-[0.575rem] font-semibold py-1 rounded-lg z-[1]">
+                    <div className="bg-dark text-white md:w-[4.15rem] sm:w-[3rem] w-[2.3rem] md:text-[0.75rem] sm:text-[0.5rem] text-[0.45rem] font-semibold py-1 rounded-lg z-[1] text-center">
                       {info.price}
                     </div>
-                    <div className="bg-dark l:w-[1.2rem] md:w-[1rem] w-[0.875rem] l:h-[1.2rem] md:h-[1rem] h-[0.875rem] transition-transform rotate-45 relative l:-top-[1rem] -top-[.65rem]"></div>
+                    <div className="bg-dark lg:w-[1.2rem] md:w-[1rem] w-[0.85rem] lg:h-[1.2rem] md:h-[1rem] h-[0.85rem] transition-transform rotate-45 relative lg:-top-[1rem] -top-[.65rem]"></div>
                   </div>
 
                   {/* candle sticks */}
                   <div
-                    className="md:w-[1.75rem] sm:w-[1.5rem] w-[1.4rem] bg-[#34CAA51A] hover:bg-[#34caa448] rounded-t-3xl"
+                    className="md:w-[2.1rem] sm:w-[1.5rem] w-[1.2rem] bg-[#34CAA51A] hover:bg-[#34caa448] rounded-t-3xl"
                     style={{
                       height: height ? `${info.height}rem` : "0",
                       background:
@@ -155,7 +155,7 @@ const Analytics = () => {
                     onMouseLeave={() => setHoveredPrice(highestHeightItem.id)}></div>
 
                   {/* sales date */}
-                  <div className="md:w-[1.85rem] w-[1.5rem] h-[1rem] border text-center mt-4 md:text-[0.75rem] text-[0.65rem] whitespace-wrap">
+                  <div className="md:w-[2rem] w-[1.5rem] md:h-[2.3rem] h-[2.2rem] text-center md:text-[0.8rem] text-[0.75rem] relative mt-[0.875rem] whitespace-wrap">
                     {info.id}
                   </div>
                 </div>

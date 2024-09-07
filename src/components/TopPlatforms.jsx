@@ -24,9 +24,9 @@ const TopPlatforms = () => {
   }, [barRef]);
 
   return (
-    <article ref={barRef} className="l:w-[40%] w-full sm:p-5 px-4 py-4 l:mt-0 mt-4 box">
+    <article ref={barRef} className="lg:w-[40%] w-full sm:p-5 px-4 py-4 lg:mt-0 mt-4 box">
       <div className="text-[1.125rem] flex-between">
-        <h2 className="dark-text l:text-lg text-base">Top Platforms</h2>
+        <h2 className="dark-text lg:text-lg text-base">Top Platforms</h2>
         <span className="cursor-pointer text-primary_green hover:scale-105 transition-all">
           See all
         </span>

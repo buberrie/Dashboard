@@ -11,8 +11,8 @@ const LatestOrders = () => {
   };
 
   return (
-    <section className="box l:w-[66%] w-full h-fit relative l:mr-5 mr-0 l:px-5 sm:p-5 px-2 py-4">
-      <h2 className="dark-text l:text-lg text-base ml-4">Latest Orders</h2>
+    <section className="box lg:w-[66%] w-full h-fit relative lg:mr-5 mr-0 lg:px-5 sm:p-5 px-2 py-4">
+      <h2 className="dark-text lg:text-lg text-base ml-4">Latest Orders</h2>
       <div className="overflow overflow-x-scroll w-full h-full">
       <table className="mx-2 md:w-full w-[160%] h-[23rem] sm:text-base text-sm">
         <thead>
