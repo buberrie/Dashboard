@@ -14,11 +14,11 @@ const Dashboard = () => {
         <section className="w-full content-container">
             <NavBar/>
            <div className=" pb-8">
-            <div className="flex lg:h-[28rem] h-fit sm:p-5 px-2 py-3 w-full lg:flex-row flex-col">
+            <div className="flex lg:h-[28rem] h-fit sm:p-5 px-2 pb-2 pt-3 w-full lg:flex-row flex-col">
               <Analytics/>
               <OrderSummary/>
             </div>
-            <div className="relative flex h-fit md:px-5 px-2 lg:py-0 py-3 w-full lg:flex-row flex-col">
+            <div className="relative flex h-fit md:px-5 px-2 lg:py-0 py-2 w-full lg:flex-row flex-col">
               <LatestOrders/>
               <TopPlatforms/>
             </div>

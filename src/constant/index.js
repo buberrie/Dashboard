@@ -198,7 +198,7 @@ export const salesTrendsValue = [
       { id: "Mar", height: "1.45", price: "$5,000" },
       { id: "Apr", height: "8.9", price: "$31,100" },
       { id: "May", height: "3", price: "$10,550" },
-      { id: "Jun", height: "12.6", price: "$45,000" },
+      { id: "Jun", height: "12.55", price: "$45,000" },
       { id: "Jul", height: "3", price: "$10,550" },
       { id: "Aug", height: "6.5", price: "$23,100" },
       { id: "Sep", height: "10.3", price: "$36,000" },

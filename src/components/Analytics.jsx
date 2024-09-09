@@ -121,7 +121,7 @@ const Analytics = () => {
 
         <main className="absolute w-full h-full flex justify-end items-end">
           <div
-            className="overflow overflow-x-scroll relative sm:top-[2.9rem] top-[2.9rem]"
+            className="overflow overflow-x-scroll relative sm:top-[2.6rem] top-[2.6rem]"
             style={{ width: "var(--chart-width)" }}>
             <div className="scroll-snap relative flex justify-between items-end w-fit">
               {valuesDetail?.map((info, index) => (
@@ -155,7 +155,7 @@ const Analytics = () => {
                     onMouseLeave={() => setHoveredPrice(highestHeightItem.id)}></div>
 
                   {/* sales date */}
-                  <div className={`md:w-[2rem] w-[1.5rem] ${selectedRange == "monthly" ? "md:h-[2.3rem] h-[2.2rem]" : ""} text-center md:text-[0.8rem] text-[0.75rem] relative mt-[0.875rem] whitespace-wrap`}>
+                  <div className={`md:w-[2rem] w-[1.5rem] ${selectedRange == "monthly" ? "md:h-[2.1rem] h-[2rem]" : ""} text-center md:text-[0.8rem] text-[0.75rem] relative mt-[0.875rem] leading-4 whitespace-wrap`}>
                     {info.id}
                   </div>
                 </div>
