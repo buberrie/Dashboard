@@ -155,7 +155,7 @@ const Analytics = () => {
                     onMouseLeave={() => setHoveredPrice(highestHeightItem.id)}></div>
 
                   {/* sales date */}
-                  <div className="md:w-[2rem] w-[1.5rem] md:h-[2.3rem] h-[2.2rem] text-center md:text-[0.8rem] text-[0.75rem] relative mt-[0.875rem] whitespace-wrap">
+                  <div className="md:w-[2rem] w-[1.5rem]  text-center md:text-[0.8rem] text-[0.75rem] relative mt-[0.875rem] whitespace-wrap">
                     {info.id}
                   </div>
                 </div>
