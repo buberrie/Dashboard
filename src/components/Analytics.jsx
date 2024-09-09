@@ -60,11 +60,11 @@ const Analytics = () => {
     <section className="box lg:w-[65%] w-full h-full relative lg:mr-3 mr-0 pt-3 lg:pb-0 pb-[4rem] lg:px-5 px-3">
       <div className="flex-between">
         <h2 className="dark-text lg:text-lg text-base">Sales Trends</h2>
-        <div className="flex-center gap-4">
+        <div className="flex-center md:gap-4 gap-3">
           <span className="lg:text-[1rem] text-[0.8rem]">Sort by:</span>
           <div className=" w-fit relative z-[2]" ref={dropDownRef}>
             <label
-              className="border w-fit rounded-[2rem] z-[1] cursor-pointer p-3 flex-between gap-4"
+              className="border w-fit rounded-[2rem] z-[1] cursor-pointer base:p-3 p-2 flex-between base:gap-4 gap-3"
               htmlFor="trend">
               <input
                 type="text"
@@ -75,7 +75,7 @@ const Analytics = () => {
                   setOptionDropdown(!OptionDropdown);
                 }}
               />
-              <span className="capitalize sm:text-base text-sm">
+              <span className="capitalize base:text-base text-sm">
                 {selectedRange}
               </span>
               <IoIosArrowDown
@@ -155,7 +155,7 @@ const Analytics = () => {
                     onMouseLeave={() => setHoveredPrice(highestHeightItem.id)}></div>
 
                   {/* sales date */}
-                  <div className="md:w-[2rem] w-[1.5rem]  text-center md:text-[0.8rem] text-[0.75rem] relative mt-[0.875rem] whitespace-wrap">
+                  <div className={`md:w-[2rem] w-[1.5rem] ${selectedRange == "monthly" ? "md:h-[2.3rem] h-[2.2rem]" : ""} text-center md:text-[0.8rem] text-[0.75rem] relative mt-[0.875rem] whitespace-wrap`}>
                     {info.id}
                   </div>
                 </div>

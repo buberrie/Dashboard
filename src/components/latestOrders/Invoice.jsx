@@ -23,13 +23,13 @@ const Invoice = (props) => {
     <div
       className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50 z-20 modal-overlay"
       onClick={handleOverlayClick}>
-      <div className=" rounded-md box dark-text w-[70%] max-w-[30rem]">
-        <div className="flex justify-end pt-8 px-8">
-          <button className="font-bold text-[1rem] border w-8 h-8 rounded-full" onClick={props.onClose}>
+      <div className=" rounded-md box dark-text w-[85%] max-w-[30rem]">
+        <div className="flex justify-end pt-7 px-7">
+          <button className="font-bold base:text-[1rem] text-sm border base:w-8 base:h-8 w-7 h-7 rounded-full" onClick={props.onClose}>
             X
           </button>
         </div>
-        <div ref={contentRef} className="m-auto py-20 px-8 w-full">
+        <div ref={contentRef} className="m-auto py-10 px-8 w-full">
         <h2 className="border-b pb-4 mb-5">
           Invoice issued to
           <span className="font-bold text-[1.125rem] ml-1">{props.name}</span>
