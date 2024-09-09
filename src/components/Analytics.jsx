@@ -58,11 +58,15 @@ const Analytics = () => {
 
   return (
     <section className="box lg:w-[65%] w-full h-full relative lg:mr-3 mr-0 pt-3 lg:pb-0 pb-[4rem] lg:px-5 px-3">
+      {/* analytic chart heading */}
       <div className="flex-between">
         <h2 className="dark-text lg:text-lg text-base">Sales Trends</h2>
         <div className="flex-center md:gap-4 gap-3">
           <span className="lg:text-[1rem] text-[0.8rem]">Sort by:</span>
+
+          {/* trend data range dropdown */}
           <div className=" w-fit relative z-[2]" ref={dropDownRef}>
+            {/* select */}
             <label
               className="border w-fit rounded-[2rem] z-[1] cursor-pointer base:p-3 p-2 flex-between base:gap-4 gap-3"
               htmlFor="trend">
@@ -83,10 +87,11 @@ const Analytics = () => {
                 className={` ${OptionDropdown ? " rotate-180 " : " rotate-0 "} transition-all duration-300 md:w-[1.5rem] w-[0.875rem] icon-color`}
               />
             </label>
+            {/* options */}
             <ul
               className={`${
                 OptionDropdown
-                  ? "opacity-100 top-14 pointer-events-auto"
+                  ? "opacity-100 top-12 pointer-events-auto"
                   : "opacity-0 top-0 pointer-events-none"
               } overflow-hidden w-full box border absolute transition-all duration-500`}>
               {salesTrends.map((trend) => (
@@ -121,7 +126,7 @@ const Analytics = () => {
 
         <main className="absolute w-full h-full flex justify-end items-end">
           <div
-            className="overflow overflow-x-scroll relative sm:top-[2.6rem] top-[2.6rem]"
+            className="overflow overflow-x-scroll relative top-[2.6rem]"
             style={{ width: "var(--chart-width)" }}>
             <div className="scroll-snap relative flex justify-between items-end w-fit">
               {valuesDetail?.map((info, index) => (
